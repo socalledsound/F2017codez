@@ -1,61 +1,35 @@
-var squareSize=40;
-var white=[255,255,255];
-var black =[0,0,0];
-var colors=[white,black];
-var startBlack=false;
+var bgColor=[120,120,120];
+var black = [0,0,0];
+var white = [255,255,255];
+var redColor = [200,0,0];
+var xStart = 10;
+var yStart = 10;
+var square_size  = 10;
+var pad=10;
+n;
 
 function setup() {
 	createCanvas(1000,1000);
-	background(120,120,120);
-	
-	
-	for (var y=0; y<8; y++) { 
-	
-		if (y%2) {
-			startBlack = true;
+	background(bgColor);
+
+// button = createButton('button');
+
+
+	for (var y=0;y<100;y++) {
+
+		for(var x=0;x<108;x++) {
+
+			if((x/2*y/6)%7) {
+			fill(black);
 			}
 			else {
-			startBlack = false;
-			} 
-	
-	
-		for (var x=0; x<8; x++) {
-			
-			if(!startBlack) {
-				
-				if (x%2) {
-					fill(0,0,0);
-				}
-				else {
-					fill(255,255,255);
-				}
-				
+			fill(white);
 			}
-			else {
-				
-				if (x%2) {
-					fill(255,255,255);
-				}
-				else {
-					fill(0,0,0);
-				}
-			}
-			
-			
-		
-			rect(x*squareSize,y*squareSize,squareSize,squareSize);	
-		 }
-		
-		
-		
-		
-	
-	}
 
-}
+			rect(x*square_size+xStart,y*square_size+yStart,square_size,square_size);
+		}
 
+	}	
 
-
-function draw() {
 
 }
