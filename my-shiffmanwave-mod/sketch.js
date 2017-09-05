@@ -31,7 +31,7 @@ function draw() {
     //rad=10;
     //var rad=cos(x/10);
     stroke(164);
-    var colChoice=int(random(90));
+    //var colChoice=int(random(90));
      fill(colors[x]);
     strokeWeight(2);
     ellipse(x+width/4, y+height/4, rad, rad);
