@@ -1,0 +1,30 @@
+{
+  "name": "rpi-nodejs-led",
+  "version": "0.0.1",
+  "description": "Blinking LED implementation with Node.js for Raspberry Pi using wiringpi.",
+  "main": "led.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-anavi/rpi-nodejs-led.git"
+  },
+  "keywords": [
+    "iot",
+    "Raspberry Pi"
+  ],
+  "dependencies": {
+    "wiring-pi": ">=2.1.1"
+  },
+  "author": "Leon Anavi <leon@anavi.org>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/leon-anavi/rpi-nodejs-led/issues"
+  },
+  "homepage": "https://github.com/leon-anavi/rpi-nodejs-led#readme",
+  "preferGlobal": "true",
+  "bin": {
+    "rpi-nodejs-led": "led.js"
+  }
+}
